@@ -1,0 +1,17 @@
+/* Add a border to the image */
+.image-container {
+    border: 2px solid #000000; /* Adjust the border properties as needed */
+    padding: 10px; /* Optional padding for better appearance */
+    max-width: 600px; /* Set the maximum width for the image container */
+    margin: 0 auto; /* Center the container horizontally */
+    }
+
+/* Add a border to the "FitTrack" featured post image */
+.post.featured .image.main {
+    border: 2px solid #000000; /* Adjust the border properties as needed */
+    padding: 10px; /* Optional padding for better appearance */
+}
+
+
+
+
