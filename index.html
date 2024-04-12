@@ -54,24 +54,42 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<!-- <span class="date">2023</span> -->
-									<h2><a href="#" style="text-transform: none;">FitTrack<br /></a></h2>
-								</a></h2>
-									<p>Application that allows users to track their workouts</p>
-								</header>
-								<a href="https://workout-tracker-client-rho.vercel.app/" class="image main"><img src="images/fittrack2.jpeg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/NFernando98/Workout-tracker" class="button large">View Project</a></li>
-								</ul>
-							</article>
+						<article class="post featured">
+							<header class="major">
+								<!-- <span class="date">2023</span> -->
+								<h2><a href="https://workout-tracker-client-rho.vercel.app/" style="text-transform: none;">FitTrack<br /></a></h2>
+								<p>Application that allows users to track their workouts</p>
+							</header>
+							<div style="position: relative;">
+								<a href="https://workout-tracker-client-rho.vercel.app/" class="image main" style="display: inline-block;">
+									<img src="images/workout1.JPG" alt="" />
+								</a>
+								<button id="next-image" style="position: absolute; top: 38%; right: 8px; transform: translateY(-50%); background-color: transparent; border: none; cursor: pointer; padding-top: 0px; padding-right: 10px;padding-left: 10px;">
+									<span style="font-size: 30px;">></span>
+								</button>
+																						
+							</div>
+							<ul class="actions special">
+								<li><a href="https://github.com/NFernando98/Workout-tracker" class="button large">View Project</a></li>
+							</ul>
+						</article>
+						
+						<script>
+							const images = ["images/workout1.JPG", "images/workout2.JPG", "images/workout3.JPG"]; // Add more image URLs as needed
+							let currentImageIndex = 0;
+						
+							document.getElementById('next-image').addEventListener('click', () => {
+								currentImageIndex = (currentImageIndex + 1) % images.length;
+								document.querySelector('.image.main img').src = images[currentImageIndex];
+							});
+						</script>
+						
 
 						<!-- Posts -->
 							<section class="posts">
 								<article>
 									<header>
-										<h2><a href="#" style="text-transform: none;">CaliRoutes<br />
+										<h2><a href="https://github.com/CaliRoutes?tab=repositories" style="text-transform: none;">CaliRoutes<br />
 										</a></h2>
 									</header>
 									<!-- width=595px ,  height=325px-->
@@ -84,7 +102,7 @@
 
 								<article>
 									<header>
-										<h2><a href="#" style="text-transform: none;">VideoCo<br />
+										<h2><a href="https://youtu.be/VO8yrahwY28" style="text-transform: none;">VideoCo<br />
 										</a></h2>
 									</header>
 									<!-- width=595px ,  height=325px-->
@@ -97,7 +115,7 @@
                 
 								<article>
 									<header>
-										<h2><a href="#" style="text-transform: none;">YUHub<br />
+										<h2><a href="https://www.youtube.com/watch?v=3RvZbrmjxXw&t=99s" style="text-transform: none;">YUHub<br />
 										</a></h2>
 									</header>
 									<a href="https://www.youtube.com/watch?v=3RvZbrmjxXw&t=99s" class="image fit"><img src="images/yuhub.jpg" class="image-container" alt="" /></a>
@@ -109,7 +127,7 @@
 
 								<article>
 									<header>
-										<h2><a href="#" style="text-transform: none;">Path finder<br />
+										<h2><a href="https://github.com/NFernando98/Path-Finder" style="text-transform: none;">Path finder<br />
 										</a></h2>
 									</header>
 									<a href="https://github.com/NFernando98/Path-Finder" class="image fit"><img src="images/path.jpg" class="image-container" alt="" /></a>
@@ -121,7 +139,7 @@
 
 								<article>
 									<header>
-										<h2><a href="#" style="text-transform: none;">Mirror chess<br />
+										<h2><a href="https://chess-game-nishith.glitch.me/mainpage/" style="text-transform: none;">Mirror chess<br />
 										</a></h2>
 									</header>
 									<a href="https://chess-game-nishith.glitch.me/mainpage/" class="image fit"><img src="images/chess.jpg" class="image-container" alt="" /></a>
