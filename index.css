@@ -13,5 +13,144 @@
 }
 
 
+/* Section header styles */
+.main-section {
+    margin-bottom: 3rem;
+}
+
+.main-section .major {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* WORK EXPERIENCE PAGE STYLES */
+.experience-section {
+  max-width: 950px; /* Increased width for longer bullet points */
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.experience-section h2 {
+  margin-bottom: 2rem;
+  color: #212931;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center; /* Center the main heading */
+}
+
+/* Experience entry styles */
+.experience-entry {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.experience-entry:last-child {
+  border-bottom: none;
+}
+
+/* Company header adjustments for better alignment */
+.company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem; /* Reduced from 1rem for tighter spacing */
+  padding-left: 0; /* Ensure no padding is affecting alignment */
+}
+
+.company-name {
+  font-size: 1.5rem;
+  color: #18bfef;
+  font-weight: bold;
+  margin-bottom: 0; /* Remove any bottom margin */
+}
+
+.company-duration {
+  font-style: italic;
+  color: #717981;
+  text-align: right; /* Ensure duration is right-aligned */
+  min-width: 180px; /* Give enough space for the duration */
+}
+
+/* Role styles - ALIGNMENT FIX */
+.role {
+  margin-left: 0; /* Remove left margin that was causing misalignment */
+  margin-bottom: 1.5rem;
+}
+
+.role-header {
+  margin-bottom: 0.5rem;
+}
+
+.role-title {
+  font-size: 1.2rem;
+  color: #212931;
+  font-weight: bold;
+  margin-top: 0; /* Ensure no top margin is pushing it down */
+}
+
+.role-location {
+  font-style: italic;
+  color: #717981;
+  margin-bottom: 1rem;
+}
+
+/* Increase indent only for accomplishments, not the whole role section */
+.role-accomplishments {
+  list-style-type: none;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  padding-right: 0; /* Remove any padding that might limit width */
+}
+
+.role-accomplishments li {
+  margin-bottom: 0.75rem;
+  color: #212931;
+  position: relative;
+  padding-left: 1.5rem; /* Space for the custom bullet */
+  line-height: 1.6; /* Slightly increased line spacing */
+  text-align: justify; /* Justify text for cleaner alignment */
+  max-width: 100%; /* Ensure bullets use full width */
+  hyphens: auto; /* Enable hyphenation for better text flow */
+}
+
+/* Custom bullet points */
+.role-accomplishments li:before {
+  content: "—"; /* Em dash for longer bullet */
+  position: absolute;
+  left: 0;
+  color: #18bfef; /* Match company name color */
+}
+
+.role-accomplishments strong {
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 736px) {
+  .company-header {
+    flex-direction: column;
+  }
+  
+  .company-duration {
+    margin-top: 0.5rem;
+    text-align: left; /* Align left on mobile */
+    min-width: auto;
+  }
+  
+  .role {
+    margin-left: 0.5rem; /* Less indentation on mobile */
+  }
+  
+  .role-accomplishments {
+    margin-left: 0;
+  }
+  
+  .role-accomplishments li {
+    text-align: left; /* Left align on mobile for better readability */
+  }
+}
+
+
 
 
