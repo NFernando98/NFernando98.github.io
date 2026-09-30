@@ -101,8 +101,12 @@ button { color: inherit; }
 .section-label > span:last-child { color: var(--muted); font-size: 9px; text-transform: none; }
 .work-intro { display: grid; grid-template-columns: 1.2fr .8fr; align-items: end; gap: 50px; padding: 46px 0 34px; }
 .project-label { display: flex; align-items: center; flex-wrap: wrap; gap: 11px; font-size: 18px; font-weight: 800; letter-spacing: -.04em; margin-bottom: 23px; }
-.redsticker-mark { position: relative; display: inline-block; width: 30px; height: 30px; flex: 0 0 30px; overflow: hidden; background: #fff; border-radius: 4px; }
+.redsticker-mark { position: relative; display: inline-block; width: 30px; height: 30px; flex: 0 0 30px; overflow: hidden; mix-blend-mode: darken; }
 .redsticker-mark img { position: absolute; top: 50%; left: 50%; width: 77px; height: 77px; max-width: none; transform: translate(-50%, -50%); }
+.redsticker-mark .redsticker-logo-dark { display: none; }
+[data-theme='dark'] .redsticker-mark { mix-blend-mode: lighten; }
+[data-theme='dark'] .redsticker-logo-light { display: none; }
+[data-theme='dark'] .redsticker-mark .redsticker-logo-dark { display: block; }
 .project-status { margin-left: 8px; padding: 5px 7px; border: 1px solid var(--line); font-size: 8px; text-transform: uppercase; letter-spacing: .025em; color: var(--muted); }
 .work-intro h2, .journey-heading h2 { font-size: clamp(38px, 4.8vw, 65px); font-weight: 600; letter-spacing: -.062em; line-height: 1.11; }
 .work-summary { max-width: 385px; justify-self: end; padding-bottom: 2px; }
