@@ -675,3 +675,25 @@ summary::-webkit-details-marker { display: none; }
   .product-story-footer { padding-top: 20px; }
   .calendar-screen { padding-top: 25px; padding-bottom: 0; }
 }
+
+/* Phone layouts preserve readable labels and the complete hardware setup. */
+@media (max-width: 620px) {
+  .flow-switch { display: grid; grid-template-columns: 1fr; }
+  .flow-switch button { font-size: 11px; padding-inline: 10px; }
+  .map-clients > div, .map-services > div { font-size: 11px; line-height: 1.5; }
+  .map-clients span, .map-services span { font-size: 10px; }
+  .map-core .mono, .map-foot { font-size: 10px; line-height: 1.6; }
+  .map-core strong { font-size: 17px; }
+  .map-core p { font-size: 12px; }
+  .customer-screens figcaption, .calendar-screen figcaption,
+  .product-story-footer p { font-size: 11px; }
+  .hardware-card { grid-template-columns: minmax(0, 1fr); }
+  .hardware-image { aspect-ratio: 595 / 325; }
+  .hardware-image img { object-fit: contain; }
+  .hardware-content { padding: 20px; gap: 16px; }
+  .hardware-content h3 { font-size: 19px; }
+  .hardware-content p { font-size: 14px; max-width: none; }
+  .hardware-content .mono, .hardware-number { font-size: 10px; }
+  .contact-email { font-size: 14px; overflow-wrap: anywhere; }
+  .contact-social { font-size: 12px; }
+}
